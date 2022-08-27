@@ -1,0 +1,375 @@
+<html DIR="LTR" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:tool="http://www.microsoft.com/tooltip"><head><META HTTP-EQUIV="Content-Type" CONTENT="text/html; CHARSET=UTF-8"></META><META NAME="MS.LOCALE" CONTENT="zh-CN"></META><META NAME="save" CONTENT="历史记录"></META><title>Windows 7 的 Windows 自动安装工具包自述文件</title><link rel="stylesheet" type="text/css" href="../local/Classic.css"></link><script src="../local/script.js"></script></head><body>
+<STYLE>
+
+div.#footer
+{
+	font-size: 90%;
+	margin-top:	0;
+	margin-bottom:	0;
+	margin-left:	0;
+	margin-right:	0;
+	padding-top:	2;
+	padding-bottom:	2;
+	padding-left:	2;
+	padding-right:	2;
+	width:	100%;
+}
+
+hr.#footerHR
+{
+	border-bottom-color: #EEEEFF;
+	border-bottom-style: solid;
+	border-bottom-width: 1;
+	border-top-color: C8CDDE;
+	border-top-style: solid;
+	border-top-width: 1;
+	height: 3;
+	color: #D4DFFF;
+}
+
+
+div.section
+{
+	padding-top:	2;
+	padding-bottom:	2;
+	padding-left:	16;
+	padding-right:	15;
+	width:	100%;
+}
+
+.heading
+{
+	font-weight:	bold;
+	margin-top:		18;
+	margin-bottom:	8;
+}
+
+h1.heading
+{
+	font-size:	110%;
+}
+
+.subHeading
+{
+	font-weight:	bold;
+	margin-bottom:	4;
+}
+
+h3.subHeading
+{
+	color:  #000066;
+	font-size: 100%;
+    font-weight: normal;
+}
+
+h4.subHeading
+{
+	color: #000000;
+	font-size: 100%;
+}
+
+div.#mainSection table
+{
+	font-size: 100%;
+	width:	100%;
+}
+
+
+div.#mainSection table td.imageCell
+{
+	white-space: nowrap;
+}
+
+div.code table
+{
+	border: 0;
+	font-size: 95%;
+	margin-bottom: 5;
+	width: 100%
+}
+
+div.alert table
+{
+	border: 0;
+	font-size: 100%;
+	width:100%;
+	background : White;
+}
+
+div.code pre
+{
+	font-family:	Monospace, Courier New, Courier;
+	font-size: 105%;
+	color:	#000066;
+	word-wrap:	break-word;
+}
+
+code
+{
+	font-family:	Monospace, Courier New, Courier;
+	font-size: 105%;
+	color:	#000066;
+}
+
+dl
+{
+	margin-top:	0;
+	padding-left:	1;
+}
+
+dt
+{
+	font-style:	italic;
+}
+
+dd
+{
+	margin-bottom:	0;
+	margin-left:	0;
+}
+
+ul
+{
+	margin-left: 24;
+	list-style-type: disc;
+}
+
+ul ul
+{
+	margin-bottom: 3;
+	margin-left: 24;
+	margin-top: 3;
+	list-style-type: disc;
+}
+
+ol
+{
+	margin-left: 24;
+	list-style-type: decimal;
+}
+
+ol ol
+{
+	margin-bottom: 4;
+	margin-left: 24;
+	margin-top: 3;
+	list-style-type: lower-alpha;
+}
+
+li
+{
+	margin-bottom: 3;
+}
+
+p
+{
+	margin-top: 0;
+	margin-bottom: 15;
+}
+
+.beta
+{
+	color: #FF0000;
+	font-weight: bold; 
+}
+
+MSHelp\:link
+{
+	text-decoration: underline;
+	color: #0000ff; 
+	hoverColor: #3366ff;
+	filterString: ;
+}
+
+body   		{ color: #000000;
+		background: #FFFFFF;  	
+		font-size: 70%;    		
+		font-family: Verdana, Arial, Sans Serif;
+		margin-left: 0em;
+		padding-left: 1.5em; }
+
+
+a:link, a:visited 	{ color: #0000FF; text-decoration:underline;}
+
+a:active, a:hover 	{ color: #FF0000;  cursor:hand; text-decoration:underline;}
+
+a.#reltopics 		{ position:relative; top:1em; }
+
+h1
+		{ font-size: 125%; 
+		margin-bottom: .5em; clear:both; width: 85%; }
+
+h2
+		{ font-size: 110%;  
+		margin-top: 1.5em;
+		margin-bottom: .5em; clear:both; }
+
+h3
+		{ font-size: 100%; 
+		margin-top: 1.2em;  
+		margin-bottom: .5em; clear:both; }
+
+h4
+		{ font-size: 100%; 
+		margin-top: 1.2em;  
+		margin-bottom: .5em; clear:both; }
+
+h5
+		{ font-size: 100%; 
+		margin-top: 1.2em;  
+		margin-bottom: .5em; clear:both; }
+
+p
+		{ margin-top: .6em; 
+		margin-bottom: .6em; }
+			
+ol
+		{ margin-top: .5em; 
+		margin-bottom: 0em; 
+		margin-left: 2.1em; 
+		padding-left: 0em;
+		margin-right:2.1em; }
+	
+ul
+		{ margin-top: .6em; 	
+		margin-bottom: 0em;
+		list-style-type: disc;
+		margin-left: 1.5em;
+		padding-left: 0em;
+		margin-right: 1.5em; }
+		
+li
+		{ margin-bottom: .7em; clear:both; }
+
+dd
+		{ margin-bottom: 0em; 
+		margin-left: 1.5em; } 
+
+dt
+		{ margin-top: 1em; }
+
+pre
+		{ margin-top: .5em;
+		margin-bottom: .5em; }
+
+code
+		{ font-family: Courier New; 
+		font-size: 1.1em; }
+
+table
+		{ border : 1;
+	font-size: 100%;
+	margin-top: 1em;
+	margin-bottom: 1em; }
+		
+th
+		{ text-align: left;
+		background: #DDDDDD;
+		vertical-align: bottom;
+		padding: .2em;
+		padding-left: .45em;
+		padding-right: .5em;}
+		
+tr
+		{ vertical-align: top; }
+
+td
+		{ vertical-align: top;
+		background: #EEEEEE;
+		padding: .2em;
+		padding-left: .45em;
+		padding-right: .5em;}
+
+
+
+p.indent	{ margin-left: 1.3em; }       /* used to indent text for notes and warnings; use this instead of the blockquote tag */
+
+p.indent2	{ margin-left: 3.5em; }   /* used to indent text a second level under the first  indent */
+
+P.indentGray	{ color: #666666; } /*  used in quad-method procedures     */
+		
+			
+/* this class style is used for the navigation tree in MMC */
+		
+p.navTree	{ margin-top: .2em; }
+
+ul.navTree 	{  list-style-type: none; }
+
+li.branch	{ margin-top: -.5em; margin-bottom: .6em;}
+
+a.where		{}	/* use for the expand <a> tag */
+
+#list		{ padding:.4em 0.3em 100% 0.3em;
+			  overflow:auto;
+			  line-height:0.4em;
+			  height:100%; width: 100%;
+			  z-index:1;
+			  left:0; top:0; 
+			  text-align:left;
+			  margin:0; 
+			  position:absolute;
+			  margin-left:1em; line-height:100%;
+			  }
+
+p.note,p.tip, p.important, p.caution, p.warning 
+		{ font-weight:bold; clear:both;
+		 margin-top:1em; 
+		 margin-bottom:-.25em; }
+
+span.printonly	{display:none }
+
+/***********************************/
+/*   Styles for checklists   */
+
+.userData 	{behavior:url(#default#userdata); }  /*sets persistance*/
+
+#checklist	{width:100%;  text-align:left; margin:0.3em 0em;}
+
+#checklist li 	{text-indent:0.2em;}
+
+
+DIV.UAbrand	{ direction: RTL; margin-top:-.25em; margin-right: -.25em; margin-bottom: -3em; }
+
+
+TABLE.nested
+{
+    BACKGROUND-COLOR: #ffffff;
+}
+
+TABLE.nested TH
+{
+    BACKGROUND-COLOR: #bbbbbb;
+}
+
+TABLE.nested TD
+{
+    BACKGROUND-COLOR: #dddddd;
+}
+
+</STYLE>
+			<input type="hidden" id="userDataCache" class="userDataStyle"></input><input type="hidden" id="hiddenScrollOffset"></input><H1>Windows 7 的 Windows 自动安装工具包自述文件</H1><div id="mainSection"><div id="mainBody"><div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()"></div><p>自述文件文档</p><p></p><p>适用于：</p><ul><li>Windows(R) 7<br /></li><li>Windows Server(R) 2008 R2<br /></li><li>Windows Server(R) 2008<br /></li><li>带有 Service Pack 1 (SP1) 的 Windows Vista(R)<br /></li></ul><p>本文档仅供参考，Microsoft 不在其中进行任何明确或隐含的担保。本文档中的信息（包括 URL 和其他 Internet 网站引用）如有变动，恕不另行通知。使用本文档或由于使用本文档而导致的全部风险由使用者承担。除非另行说明，否则此处示例中涉及的公司、组织、产品、域名、电子邮件地址、徽标、人员、地点和事件均属虚构。与任何真实公司、组织、产品、域名、电子邮件地址、徽标、人员、地点或事件无关，也不应进行这方面的推断。用户有责任遵守所有适用的版权法/著作权法。在不限制版权许可权利的前提下，未经 Microsoft Corporation 明确书面许可，本文档的任何部分不可被复制、存储或引进检索系统，或者以任何形式、任何方式（电子、机械、复印、录音或其他）或为任何目的进行传播。</p><p>本文档可能涉及 Microsoft 的专利、专利申请、商标、版权或其他知识产权。除了任何 Microsoft 授权许可协议所提供的明确书面许可，拥有本文档并不赋予您任何有关这些专利、商标、版权或其他知识产权的许可。</p><p>(C) 2009 Microsoft Corporation。保留所有权利。</p><p>Internet Explorer、Microsoft、Windows、Windows Server 和 Windows Vista 是 Microsoft Corporation 在美国或其他国家/地区的注册商标或商标。</p><p>此处提及的实际公司和产品名称可能是其各自所有者的商标。</p><h1 class="heading">内容</h1><div id="sectionSection0" class="section"><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><ul xmlns=""><li><a href="#BKMK_Introduction">简介</a><br /></li><li><a href="#Updates">此自述文件的更新</a><br /></li><li><a href="#BKMK_WindowsAIKSetupAndInstallationKnownIssues">Windows AIK 设置和安装的已知问题</a><br /></li><li><a href="#BKMK_WindowsSetupKnownIssues">Windows 安装程序的已知问题</a><br /></li><li><a href="#BKMK_WindowsSIMKnownIssues">Windows 系统映像管理器 (Windows SIM) 的已知问题</a> <br /></li><li><a href="#CPI">组件平台接口 (CPI) 的已知问题</a><br /></li><li><a href="#BKMK_WindowsPEKnownIssues">Windows PE 的已知问题</a><br /></li><li><a href="#BKMK_DISM">部署映像服务和管理 (DISM) 的已知问题</a><br /></li><li><a href="#BKMK_UnattendedSetupKnownIssues">无人参与安装的已知问题</a><br /></li><li><a href="#BKMK_OCSetup_Known_Issues">OCSetup 的已知问题</a><br /></li><li><a href="#DocumentationKnownIssues">文档的已知问题</a><br /></li></ul></content></div><a name="BKMK_Introduction"></a><h1 class="heading">简介</h1><div id="sectionSection1" class="section"><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns="">此自述文件包含重要的最新信息，用于为即将推出的 Windows(R) 7 版本的 Windows 自动安装工具包 (Windows AIK) 的帮助文档提供补充。在安装 Windows AIK 之前，强烈建议您查看此自述文件。</p>
+<p xmlns="">此产品附带一套文档，其中包括《Windows 自动安装工具包用户指南》、《用户状态迁移工具用户指南》和其他文档。若要在安装 Windows AIK 之后查看这些文档，请单击「开始」<b></b>，依次指向“所有程序”<b></b>、<b>Microsoft Windows AIK</b>、“文档”<b></b>，然后单击相应的帮助文件。默认情况下，这些文档会安装到 %ProgramFiles%\Windows AIK\Docs\CHMs 文件夹中。</p></content></div><a name="Updates"></a><h1 class="heading">此自述文件的更新</h1><div id="sectionSection2" class="section"><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns="">此自述文件将随新问题的发现而不断更新。最新版本的 Windows AIK 的此自述文件位于<a href="http://go.microsoft.com/fwlink/?LinkId=139690" alt=""><linkText xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">此处。</linkText></a></p></content></div><h1 class="heading">其他资源</h1><div id="sectionSection3" class="section"><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns="">除了 Windows AIK 中提供的工具之外，Microsoft 还提供了其他工具和资源来帮助简化 Windows 部署。</p><ul xmlns=""><li>Microsoft(R) 部署工具包 (MDT) (<a href="http://go.microsoft.com/fwlink/?LinkId=126933" alt=""><linkText xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">http://go.microsoft.com/fwlink/?LinkId=126933</linkText></a> ) <br />MDT 将台式机和服务器部署所需的工具和过程统一到一个通用部署控制台和指南集合中。使用 MDT 工具和端对端指导可缩短部署时间，标准化台式机和服务器映像，限制服务中断，降低部署后的技术支持成本，并改进安全性和现行配置管理。<br /></li><li>Microsoft 评估和计划工具包 (MAP) (<a href="http://go.microsoft.com/fwlink/?LinkID=132138" alt=""><linkText xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">http://go.microsoft.com/fwlink/?LinkID=132138</linkText></a>)<br />MAP 是一个工具，使用该工具可轻松针对各种技术迁移项目评估当前 IT 基础结构。它包含以前随 Windows Vista(R) 硬件评估解决方案加速器一起提供的功能。<br /></li><li>Microsoft 应用程序兼容性工具包 (ACT) (<a href="http://go.microsoft.com/fwlink/?LinkID=82101" alt=""><linkText xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">http://go.microsoft.com/fwlink/?LinkID=82101</linkText></a>)<br />ACT 包含一些工具和文档，在环境中部署新版本的 Windows、Windows 更新或新版本的 Windows Internet Explorer(R) 之前，必须使用这些工具和文档来评估和减少应用程序兼容性问题。<br /></li></ul></content></div><a name="BKMK_WindowsAIKSetupAndInstallationKnownIssues"></a><h1 class="heading">Windows AIK 设置和安装的已知问题</h1><div id="sectionSection4" class="section"><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns=""></p></content><sections xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+<h4 class="subHeading" xmlns="">支持安装到带有 Service Pack 2 的 Windows Server 2003。</h4><div class="subSection" xmlns=""><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns="">Windows AIK 安装程序 (StartCD.exe) 将带有 Service Pack 1 (SP1) 的 Windows Server(R) 2003 列为支持的平台。这是不正确的，因为它仅支持带有 Service Pack 2 的 Windows Server 2003。
+</p></content></div>
+<h4 class="subHeading" xmlns="">安装 Windows AIK。</h4><div class="subSection" xmlns=""><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns="">不支持安装 Windows AIK 的多个版本。不能将 Windows AIK 的 Windows 7 版本和 Windows Vista 版本安装到同一台技术人员计算机上。首先，必须卸载以前的版本，然后才可以安装新版本。</p><p xmlns="">可以使用 2.0 版本的 Windows AIK 配置和部署 RTM 版本的带有 SP1 的 Windows Vista、Windows 7、Windows Server 2008 和 Windows Server 2008 R2。
+</p></content></div><h4 class="subHeading" xmlns="">用户状态迁移工具 (USMT) 文档的位置。</h4><div class="subSection" xmlns=""><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns=""><b>「开始」</b>菜单中没有指向《用户状态迁移工具用户指南》(Usmt.chm) 的链接。USMT 的文档随此版本的 Windows AIK 提供，可以在 %PROGRAMFILES%\Windows AIK\Docs\CHMs 中找到该文档。
+</p></content></div><h4 class="subHeading" xmlns="">不支持在同一台计算机上安装两种语言的 Windows AIK。</h4><div class="subSection" xmlns=""><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns="">即使已安装的现存 Windows AIK 使用一种语言，Windows AIK 仍允许以其他语言进行后续安装。不支持在同一台计算机上安装多种语言的 Windows AIK。</p></content></div><h4 class="subHeading" xmlns="">以其他语言安装本地化的 Windows AIK 会导致不一致的体验。</h4><div class="subSection" xmlns=""><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns="">以操作系统活动语言之外的语言安装本地化的 Windows AIK，可能会导致工具和文档以不同的语言显示。</p><p xmlns="">解决方法：以操作系统活动语言安装 Windows AIK。</p></content></div><h4 class="subHeading" xmlns="">可以随 Windows AIK 一同安装的受支持版本。</h4><div class="subSection" xmlns=""><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns="">以下版本支持 Windows AIK：</p><ul xmlns=""><li>Windows 7<br /></li><li>Windows Server 2008 R2<br /></li><li>Windows Server 2008<br /></li><li>Windows Vista<br /></li><li>Windows Server(R) 2003<br /></li></ul><p xmlns="">在 Windows 7 和 Windows Vista 上安装 Windows AIK 会造成 Windows AIK 的脱机服务和 Windows 预安装环境 (Windows PE) 自定义组件行为异常。</p></content></div><h4 class="subHeading" xmlns="">Windows AIK DVD 随附的 .NET Framework 仅有英文版本。</h4><div class="subSection" xmlns=""><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns="">若要安装 .NET Framework 的本地化版本，请转到 <a href="http://go.microsoft.com/fwlink/?LinkId=19831" alt=""><linkText xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">Microsoft 下载中心</linkText></a>（可能为英文网页）。</p></content></div><h4 class="subHeading" xmlns="">不支持将 Windows AIK 安装到包含括号的文件夹路径。</h4><div class="subSection" xmlns=""><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns="">例如，\Program Files\Windows AIK (Windows7) 不是支持的文件夹路径。</p></content></div></sections></div><a name="BKMK_WindowsSetupKnownIssues"></a><h1 class="heading">Windows 安装程序的已知问题</h1><div id="sectionSection5" class="section"><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns=""></p></content><sections xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><h4 class="subHeading" xmlns="">置入 Drvload 的驱动程序优先。</h4><div class="subSection" xmlns=""><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns="">将使用 Drvload 工具添加的驱动程序标记为该设备的首选驱动程序。如果在 Windows 安装过程中添加了更新的驱动程序，则使用 Drvload 添加的驱动程序优先。</p></content></div><h4 class="subHeading" xmlns="">用户帐户的密码要求。</h4><div class="subSection" xmlns=""><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns="">在 Windows Server 2008、Windows Server 2008 R2 和带有 Service Pack 1 的 Windows Vista 中，默认密码策略要求为所有用户帐户创建一个复杂的密码。在安装过程中，安装程序会提示您配置一个复杂的密码。尝试配置一个非复杂密码（手动或通过使用脚本，如 <b>net</b> 命令）将失败。</p><p xmlns="">当 Sysprep 工具运行时，它为会内置管理员帐户设置一个空白密码。但是，Sysprep 仅会为服务器版本清除内置管理员帐户的密码，而不会为客户端版本执行此操作。下次启动计算机时，安装程序将显示密码提示。通过创建与 Sysprep 一起使用的答案文件可以自动配置密码，该答案文件为 Microsoft-Windows-Shell-Setup | UserAccounts | <code>AdministratorPassword</code> 无人参与安装设置指定一个值。</p><p xmlns="">OEM 和系统构建者需要保留其计算机的默认密码策略。但是，将允许企业客户更改默认密码策略。</p><p xmlns="">企业客户可以通过为 Microsoft-Windows-Shell-Setup | UserAccounts | <code>AdministratorPassword</code> 指定所需的值，在无人参与安装过程中为内置管理员帐户配置一个非复杂密码。</p><p xmlns="">
+</p></content></div>
+<h4 class="subHeading" xmlns="">如果 Microsoft-Windows-Shell-Setup 组件中未指定时区，则会使用默认时区值。</h4><div class="subSection" xmlns=""><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns="">默认时区基于所安装的语言和答案文件中指定的国家/地区。如果国家/地区拥有多个时区，则将对应于该国家/地区的首都/主要城市位置的时区设置为该国家/地区的默认时区。例如，如果 <b>UserLocale</b> 为 en-CA，则会使用东部标准时间 (EST)，这是因为加拿大首都/主要城市是渥太华位于东部标准时区。</p><div class="alert" xmlns=""><table width="100%" cellspacing="0" cellpadding="0"><tr><th align="left">注意：</th></tr><tr><td>如果 <b>UserLocale</b> 值为 en-US，则 Windows 安装的时区默认为太平洋标准时间 (PST)。
+<p></p></td></tr></table><p></p></div></content></div><h4 class="subHeading" xmlns="">Windows Vista 安装程序失败，错误代码为：0x80070491。</h4><div class="subSection" xmlns=""><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns="">安装 Windows Vista 时，安装程序可能失败，并显示以下错误消息：</p><div class="code" xmlns=""><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th align="left"></th><th align="right"></th></tr><tr><td colspan="2"><pre>Windows 无法访问所需文件 Drive:\Sources\Boot.wim。
+请确保安装需要的所有文件都可用，然后重新开始安装。
+错误代码：0x80070491</pre></td></tr></table></span></div><p xmlns="">如果执行了以下步骤，则可能会发生此问题：</p><ol xmlns=""><li>创建了自定义 Windows PE 映像。<br /></li><li>将映像重命名为 Boot.wim。<br /></li><li>将 Windows Vista 媒体上的 Boot.wim 文件替换为自定义的 Boot.wim 文件。<br /></li></ol><p xmlns="">由于自定义的 Boot.wim 文件缺少 ImageX 中必需的标志选项，安装程序失败。</p><p xmlns="">请对自定义的 Boot.wim 运行以下命令：</p><div class="code" xmlns=""><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th align="left"></th><th align="right"></th></tr><tr><td colspan="2"><pre>imagex /info boot.wim 1 <b>ImageName ImageDescription</b> /flags "9"</pre></td></tr></table></span></div><p xmlns="">如果标志未设置为 9，则 Windows 安装程序失败，并显示上面列出的错误消息。
+</p></content></div><h4 class="subHeading" xmlns="">使用 OCSetup 安装或卸载组件可能会失败。</h4><div class="subSection" xmlns=""><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns="">如果尝试使用 OCSetup 和无人参与答案文件安装或卸载组件，则即使答案文件包含根级别组件，该过程也可能会失败。若要解决此问题，请使用部署映像服务和管理 (DISM) 应用无人参与答案文件，而不要使用 OCSetup。</p></content></div></sections></div><a name="BKMK_WindowsSIMKnownIssues"></a><h1 class="heading">Windows 系统映像管理器 (Windows SIM) 的已知问题</h1><div id="sectionSection6" class="section"><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns=""></p></content><sections xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><h4 class="subHeading" xmlns="">使用 Windows SIM 创建不同体系结构类型的编录。</h4><div class="subSection" xmlns=""><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns="">由于在带有 SP1 的 Windows Vista、Windows Server 2008、Windows 7 和 Windows Server 2008 R2 中，对服务堆栈进行了更改，因此 Windows SIM 无法为某些不同体系结构类型的 Windows 映像创建编录文件。以下列表说明了 Windows SIM 体系结构类型，以及可以为每种类型创建的编录。</p><ul xmlns=""><li>x86 映像管理器<br xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" />可以为基于 x86、基于 x64 和基于 Itanium 的 Windows 映像创建编录。<br /></li><li>x64 映像管理器<br xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" />仅可以为基于 x64 的 Windows 映像创建编录。<br /></li><li>基于 Itanium 的映像管理器<br xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" />仅可以为基于 Itanium 的 Windows 映像创建编录。<br /></li></ul><p xmlns=""></p></content></div><h4 class="subHeading" xmlns="">Windows SIM 无法保存从文件路径中包含与号字符 (&amp;) 的 Windows 映像生成的答案文件。</h4><div class="subSection" xmlns=""><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns="">尝试保存 Windows 映像文件路径中具有与号字符 (&amp;) 的答案文件会生成 XML 验证错误。
+</p><p xmlns="">解决方法：将所有 Windows 映像 (.wim) 文件和 Windows 映像编录 (.clg) 文件存储在路径名称中没有与号 (&amp;) 的文件夹中。
+</p></content></div></sections></div><a name="CPI"></a><h1 class="heading">组件平台接口 (CPI) 的已知问题</h1><div id="sectionSection7" class="section"><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns="">如果尝试使用调用组件平台接口 (CPI) 的自定义应用程序将程序包导入到分布共享中，则将返回错误 (System.IO.FileNotFoundException)。这是因为服务堆栈中的文件 (Dpx.dll) 需位于您的应用程序可以使用的路径中。解决方法是验证 %PROGRAM FILES%\Windows AIK\Tools\Image Manager 文件夹是否位于系统路径中。</p></content></div><a name="BKMK_WindowsPEKnownIssues"></a><h1 class="heading">Windows PE 的已知问题</h1><div id="sectionSection8" class="section"><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns=""></p></content><sections xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><h4 class="subHeading" xmlns="">Windows 引导管理器兼容性</h4><div class="subSection" xmlns=""><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns="">以前版本的 Windows 引导管理器（Bootmgr 或 Bootmgfw.efi）与更新版本的 Windows 不兼容。但是，所有版本的 Windows 引导管理器都是向后兼容的。为了避免在引导过程中发生混乱，例如对于双重引导系统，请使用与您安装的 Windows 的最新版本匹配的 Windows 引导管理器版本。有关 BCDboot.exe 命令行选项的详细信息以及有关如何部署 Windows 7 引导管理器的信息，请参阅 Windows AIK 用户指南。</p></content></div><h4 class="subHeading" xmlns="">Windows PE 重新引导之后，已装载的映像被损坏。</h4><div class="subSection" xmlns=""><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns="">如果在 Windows PE 会话期间装载映像并重新引导计算机，则已装载的映像目录会被损坏。不支持 <b>ImageX /cleanup</b> 命令。使用 <b>the ImageX /unmount</b> 命令卸载损坏的目录，然后重新装载映像。
+</p></content></div><h4 class="subHeading" xmlns="">从包含平面 Windows PE 映像的光学媒体引导时，磁盘分区不可访问。</h4><div class="subSection" xmlns=""><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns="">从光学媒体上的平面 Windows PE 映像引导时，不会报告任何磁盘分区。这是因为没有启动 NTFS 服务。</p><p xmlns="">解决方法：运行 <code>net start ntfs</code> 来查看分区。</p></content></div><h4 class="subHeading" xmlns="">Wpeutil 命令的 CreatePageFile 选项可能会因现有页面文件而失败。</h4><div class="subSection" xmlns=""><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns="">如果存在某个页面文件，则必须将 <b>/CreatePageFile</b> 选项设置为等于或大于该页面文件的当前大小，否则该命令将失败。</p></content></div><h4 class="subHeading" xmlns="">Copype.cmd 命令因路径中存在空格而失败。</h4><div class="subSection" xmlns=""><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns="">Copype.cmd 的目标路径参数不能包含空格，否则它将失败。</p></content></div></sections></div><a name="BKMK_DISM"></a><h1 class="heading">部署映像服务和管理 (DISM) 的已知问题</h1><div id="sectionSection9" class="section"><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns=""></p></content><sections xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><h4 class="subHeading" xmlns="">Windows Vista SP1 或 Windows Server 2003 R2 64 位主机环境所需的修补程序。</h4><div class="subSection" xmlns=""><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns="">在从 64 位的 Windows Vista SP1 主机、Windows Server 2008 RTM 或 Windows Server 2003 R2 主机将 <b>DISM</b> 命令与 <b>/Add-Package</b>、<b>/Enable-Feature</b> 或 <b>/Disable-Feature</b> 命令结合使用之前，必须先安装一个修补程序。</p><p xmlns="">若要在主机环境中处理 Windows 7 映像，必须在主机上安装修补程序 KB960037。Windows OPK 和 Windows AIK 媒体中提供了此修补程序，可以在以下位置之一的修补程序 &lt;%mediaroot%&gt;\HotFix 文件夹中找到：</p><ul xmlns=""><li>对于 64 位的 Windows Vista SP1 或 Windows Server 2008 R2 RTM 主机操作系统，请从以下位置安装此修补程序：\HotFix\KB960037\WS08<br /></li><li>对于 64 位的 Windows Server 2003 R2 主机操作系统，请从以下位置安装此修补程序：\HotFix\KB960037\W2K3 <br /></li></ul><p xmlns="">双击相应的 .exe 文件安装此修补程序。</p></content></div><h4 class="subHeading" xmlns="">使用 DISM 添加程序包后再将其删除不会节省空间。</h4><div class="subSection" xmlns=""><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns="">由于脱机清理问题，执行以下操作不会节省空间：使用 DISM 命令行选项 <b>/Add-Package</b> 添加程序包，然后使用 <b>DISM /Remove-Package</b> 选项将其删除。
+</p></content></div></sections></div><a name="BKMK_UnattendedSetupKnownIssues"></a><h1 class="heading">无人参与安装的已知问题</h1><div id="sectionSection10" class="section"><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns=""></p></content><sections xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><h4 class="subHeading" xmlns="">帮助更新：隐藏“欢迎使用 Windows”中的用户帐户创建页。</h4><div class="subSection" xmlns=""><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns="">如果将用户或组添加到本地安全组，则将隐藏“欢迎使用 Windows”中的用户帐户创建页。通过执行以下操作之一，将用户或组添加到本地安全组：</p><ul xmlns=""><li>创建本地用户。<br /></li><li>使用 Microsoft-Windows-Shell-Setup | <code>UserAccounts</code> 无人参与安装设置将域用户添加到本地安全组。<br /></li></ul><p xmlns="">若要隐藏“欢迎使用 Windows”中的用户帐户创建页，而不创建本地用户，请使用以下解决方法之一：</p><p xmlns=""><b>解决方法 1</b></p><p xmlns="">如果计算机已加入域，则使用以下 XML 示例将域用户安全组添加到本地用户安全组。</p><div class="code" xmlns=""><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th align="left"></th><th align="right"></th></tr><tr><td colspan="2"><pre>&lt;DomainAccounts&gt;
+&lt;DomainAccountList wcm:action="add"&gt;
+&lt;DomainAccount wcm:action="add"&gt;
+&lt;Group&gt;Users&lt;/Group&gt; 
+&lt;Name&gt;Domain Users&lt;/Name&gt; 
+&lt;/DomainAccount&gt;
+&lt;Domain&gt;FabrikamDomain&lt;/Domain&gt; 
+&lt;/DomainAccountList&gt;
+&lt;/DomainAccounts&gt;</pre></td></tr></table></span></div><p xmlns="">由于加入域会自动将域用户安全组添加到本地用户安全组，因此 <b>DomainAccounts</b> 命令不会影响本地用户组的成员关系。但是，使用此 XML 示例加入域还将隐藏“欢迎使用 Windows”中的用户帐户创建页。</p><p xmlns=""><b>解决方法 2</b></p><p xmlns="">使用 <b>sysprep /quit</b> 命令将以下注册表值设置为 <b>1</b>：</p><div class="code" xmlns=""><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th align="left"></th><th align="right"></th></tr><tr><td colspan="2"><pre>HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Setup\OOBE\UnattendCreatedUser</pre></td></tr></table></span></div></content></div><h4 class="subHeading" xmlns="">错误消息：“Windows 无法分析或处理无人参与答案文件。”</h4><div class="subSection" xmlns=""><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns="">如果答案文件中存在错误，如输入错误，则可能会收到以下错误消息：</p><p xmlns="">“Windows 无法为 &lt;配置阶段&gt; 分析或处理无人参与答案文件 C:\Windows\Panther\Unattend.xml。无法应用答案文件中指定的设置。处理 &lt;组件名称&gt; 的设置时，检测到错误。”</p><p xmlns="">直到已将 Windows 安装到目标计算机并已引导计算机后，才会显示此错误消息。</p><p xmlns="">若要解决此问题，必须使用更正的答案文件覆盖参考映像中的答案文件。然后，可以重新部署参考映像。</p><p xmlns=""><b>更新参考映像中的答案文件的步骤</b></p><ol xmlns=""><li>查看 Windows 安装程序日志文件以确定该错误在答案文件中的精确位置以及该错误所在的配置阶段。查看以下文件：<br /><ul><li>%windir%\Panther\Setupact.log<br /></li><li>%windir%\Panther\UnattendGC\Setupact.log<br /></li></ul></li><li>在已确定答案文件中的错误之后，请使用 Windows SIM 创建更正的答案文件。<br />若要更新参考映像中的答案文件，请从技术人员计算机运行以下 ImageX 命令，以装载具有读/写访问权限的主映像：<br /><b>ImageX /mountRW </b> <i>&lt;referenceImage&gt; &lt;imageIndex&gt; &lt;mountPoint&gt;</i>。<br />其中 <i>&lt;referenceImage&gt;</i> 是 .wim 文件，<i>&lt;imageIndex&gt;</i> 是 .wim 文件中的 Windows 映像的索引号，而 <i>&lt;mountPoint&gt;</i> 是可以将映像装载到的本地目录。在步骤 3 的示例中，装载点将作为 T:\Mount 进行引用。<br /></li><li>导航到装载的 Windows 映像 (T:\Mount\Windows\Panther) 中的日志文件，然后运行以下命令：<br /><b>mkdir T:\mount\windows\panther\unattend</b><br />如果此目录已存在，则可以跳过此步骤。<br /></li><li>使用文件名 Unattend.xml 将更正的答案文件复制到以下位置：T:\Mount\Windows\Panther\Unattend\Unattend.xml。<br />如果 T:\Mount\Windows\Panther\Unattend\Unattend.xml 已存在，则使用新文件覆盖它。另外，必须将新的答案文件命名为 Unattend.xml。<br /></li><li>在命令提示符下键入以下内容：<b>ImageX /unmount /commit </b> <i>&lt;mountPoint&gt;</i><br />现在已修复主映像。在目标计算机上，格式化硬盘，然后重新安装映像。测试参考映像是否正确。如果仍存在问题，请重复这些步骤，直到更正了答案文件中的所有错误为止。<br /></li></ol></content></div></sections></div><a name="BKMK_OCSETUP_KNown_Issues"></a><h1 class="heading">OCSetup 的已知问题</h1><div id="sectionSection11" class="section"><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns=""></p></content><sections xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><h4 class="subHeading" xmlns="">使用 OCSetup 安装或卸载组件可能会失败。</h4><div class="subSection" xmlns=""><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns="">如果尝试使用 OCSetup 和无人参与答案文件安装或卸载组件，则即使无人参与文件包含根级别组件，该过程也可能会失败。若要解决此问题，请使用 DISM 应用无人参与答案文件，而不要使用 OCSetup。</p></content></div></sections></div><h1 class="heading">文档的已知问题</h1><div id="sectionSection12" class="section"><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns=""></p></content><sections xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><a name="DocumentationKnownIssues" xmlns=""></a><h4 class="subHeading" xmlns="">Windows 版本服务命令。</h4><div class="subSection" xmlns=""><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns="">在主题“Windows 版本服务命令”中，有关限制的说明仅适用于 Windows Anytime Upgrade (WAU)；但是限制并不适用于服务命令。如果使用 DISM 升级，则当运行 <b>/Get-TargetEditions</b> 选项时，只有可以将映像更改到的 Windows 版本会作为选项出现。但是，如果最终用户运行 Windows Anytime Upgrade (WAU)，则 Windows 7 简易版不能更改为 Windows 7 家庭普通版。可以使用 WAU 从 Windows 7 简易版升级到 Windows 7 家庭高级版或更高版本，也可以从 Windows 7 家庭普通版升级到 Windows 7 家庭高级版或更高版本。
+</p></content></div><h4 class="subHeading" xmlns="">在 Windows 7 专业版上不支持 Windows BitLocker 驱动器加密。</h4><div class="subSection" xmlns=""><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns="">主题“了解 BitLocker 驱动器加密”指出 Windows 7 专业版支持 BitLocker，这是不正确的。它应该指出在 Windows 7 企业版上支持 BitLocker。</p></content></div><h4 class="subHeading" xmlns="">主题“操作实例：向 Windows 安装程序中添加多语言支持”有两个错误。</h4><div class="subSection" xmlns=""><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><p xmlns="">主题“操作实例：向 Windows 安装程序中添加多语言支持”包含以下错误：</p><ul xmlns=""><li>当向 Boot.wim 文件添加语言支持时，您还必须向 Install.wim 文件中添加相应的 Windows 语言包。安装过程要求两个映像包含相同的语言包集。<br /></li><li>在步骤 3.2 中，示例命令行选项应该从 <b>/index:1</b> 更改为 <b>/index:2</b>。<br /></li></ul></content></div></sections></div></div></div></body></html>
